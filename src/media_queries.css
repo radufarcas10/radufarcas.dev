@@ -1,0 +1,85 @@
+@media screen and (min-width: 360px) and (max-width: 412px) {
+  html {
+    height: 155%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    min-height: unset;
+  }
+  aside::after {
+    top: unset;
+    right: unset;
+    bottom: 0;
+    height: 1px;
+    animation: inc-h .25s .25s linear forwards;
+  }
+  section {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+  }
+  .t6 {
+    width: 9rem!important;
+  }
+  .d1, .d2, .d3, .d4, .d5, .d6 {
+    max-width: 20rem;
+    white-space: normal;
+  }
+  .stack {
+    align-items: center;
+  }
+  #techs::after {
+    left: unset;
+  }
+  .tech {
+    font-size: inherit;
+  }
+  .stack-img {
+    width: 50px;
+  }
+  .tech-chev, #techs::after {
+    width: 16rem;
+  }
+  
+  .js {
+    /* width: 40px; */
+  }
+  
+  .css {
+    width: 50px;
+  }
+  
+  .native {
+    width: 18px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 14px 5px;
+  }
+  
+  .next {
+    padding: 1px 5px;
+  }
+  
+  .electron {
+    /* width: 40px; */
+  }
+  
+  .jasmine {
+    width: 60px;
+  }
+  
+  .github {
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 360px) {
+   .d1, .d2, .d3, .d4, .d5, .d6 {
+    max-width: 18rem;
+   }
+}

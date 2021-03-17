@@ -1,0 +1,111 @@
+@keyframes at1 {
+  from{width: 0;}
+  to{width: 60px;}
+}
+@keyframes at2 {
+  from{width: 0;}
+  to{width: 76px;}
+}
+@keyframes at3 {
+  from{width: 0;}
+  to{width: 68px;}
+}
+@keyframes at4 {
+  from{width: 0;}
+  to{width: 53px;}
+}
+@keyframes at5 {
+  from{width: 0;}
+  to{width: 44px;}
+}
+@keyframes at6 {
+  from{width: 0;}
+  to{width: 6rem;}
+}
+@keyframes dt1 {
+  from{width: 0;}
+  to{width: 23rem;}
+}
+@keyframes dt2 {
+  from{width: 0;}
+  to{width: 19rem;}
+}
+@keyframes dt3 {
+  from{width: 0;}
+  to{width: 34rem;}
+}
+@keyframes dt4 {
+  from{width: 0;}
+  to{width: 21rem;}
+}
+@keyframes dt5 {
+  from{width: 0;}
+  to{width: 21rem;}
+}
+@keyframes dt6 {
+  from{width: 0;}
+  to{width: 21rem;}
+}
+@keyframes stack {
+  from{width: 0}
+  to{width: 17rem}
+}
+@keyframes fadeIn {
+  from{opacity:0;}
+  to{opacity:1;}
+}
+@keyframes fadeAndSlide {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+@keyframes inc {
+  from{height: 0;}
+  to{height: 100%;}
+}
+@keyframes inc-h {
+  from{width: 0;}
+  to{width: 80%;}
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(270deg);
+  }
+  40% {
+    transform: translateY(-5px) rotate(270deg);
+  }
+  60% {
+    transform: translateY(-2px) rotate(270deg);
+  }
+}
