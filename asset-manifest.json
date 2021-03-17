@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/about/static/css/main.2d378447.chunk.css",
-    "main.js": "/about/static/js/main.3cf9adb8.chunk.js",
-    "main.js.map": "/about/static/js/main.3cf9adb8.chunk.js.map",
+    "main.css": "/about/static/css/main.ffa0cf92.chunk.css",
+    "main.js": "/about/static/js/main.9faa1875.chunk.js",
+    "main.js.map": "/about/static/js/main.9faa1875.chunk.js.map",
     "runtime-main.js": "/about/static/js/runtime-main.2050e629.js",
     "runtime-main.js.map": "/about/static/js/runtime-main.2050e629.js.map",
     "static/js/2.254eb019.chunk.js": "/about/static/js/2.254eb019.chunk.js",
@@ -10,7 +10,9 @@
     "static/js/3.22e61f16.chunk.js": "/about/static/js/3.22e61f16.chunk.js",
     "static/js/3.22e61f16.chunk.js.map": "/about/static/js/3.22e61f16.chunk.js.map",
     "index.html": "/about/index.html",
-    "static/css/main.2d378447.chunk.css.map": "/about/static/css/main.2d378447.chunk.css.map",
+    "service-worker.js": "/about/service-worker.js",
+    "service-worker.js.map": "/about/service-worker.js.map",
+    "static/css/main.ffa0cf92.chunk.css.map": "/about/static/css/main.ffa0cf92.chunk.css.map",
     "static/js/2.254eb019.chunk.js.LICENSE.txt": "/about/static/js/2.254eb019.chunk.js.LICENSE.txt",
     "static/media/index.css": "/about/static/media/JetBrainsMono-VariableFont_wght.e1766c48.ttf",
     "static/media/bulma.b29109e2.png": "/about/static/media/bulma.b29109e2.png",
@@ -33,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.2050e629.js",
     "static/js/2.254eb019.chunk.js",
-    "static/css/main.2d378447.chunk.css",
-    "static/js/main.3cf9adb8.chunk.js"
+    "static/css/main.ffa0cf92.chunk.css",
+    "static/js/main.9faa1875.chunk.js"
   ]
 }
