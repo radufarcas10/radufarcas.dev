@@ -1,27 +1,40 @@
-import me from './me.jpg';
-import './keyframes.css';
-import './app.css';
-import './media_queries.css';
-import Header from './components/Header';
-import Aside from './components/Aside';
-import Footer from './components/Footer';
-import Section from './components/Section';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import 'keyframes.css';
+import 'app.css';
+import 'media_queries.css';
+import Home from 'components/Home';
+import CV from 'components/CV';
+import Footer from 'components/Footer';
+
+library.add(fab);
 
 function App() {
   return (
-    <div className="wrapper">
-      <div className="grad">
-        <div className="grad-in"></div>
-      </div>
-      <div className="about">
-        <Header />
-        <div className="row">
-          <Aside />
-          <Section />
+    <Router>
+      <div className="wrapper">
+        <div className="grad">
+          <div className="grad-in"></div>
         </div>
-        <Footer />
+        <div className="about">
+          <Switch>
+            <Route path="/cv">
+              <CV />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

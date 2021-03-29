@@ -1,6 +1,6 @@
 export const about = {
     title: 'About me',
-    desc: 'Passionate about JavaScript and everything related to it'
+    desc: 'I am a Front-end developer based in Cluj-Napoca, Romania, and let\'s say that I love JavaScript, always exploring and playing with the newest technologies.'
 }
 
 export const experience = {
@@ -9,7 +9,15 @@ export const experience = {
     interval: '2016 - present',
     job: 'Front-End Developer',
     company: '@Evozon',
-    url: 'https://evozon.com'
+    url: 'https://evozon.com',
+    projects: [
+      'Currently working on the booking application for one of Europe\'s largest experience gifts provider',
+      'Other internal projects', 
+      'Platform for real estate sells and rentals',
+      'Local car sharing platform that uses its own fleet of cars',
+      'Platform that helps local businesses and administration to schedule any kind of appointments with the customers or citizens',
+      'Internal library of Material Design React components'
+    ]
   }
 }
 
@@ -34,10 +42,12 @@ export const education = {
 
 export const hobbies = {
   title: 'Hobbies',
-  desc: 'JS, football and all kinds of sports, gadgets, tech'
+  desc: `Besides the love for JS, I love photography, football and sports in general. \n
+  I also like gadgets, playing around with the newest tech, IoT, games and many more. \n
+  Sometimes I like to try designing all kinds of things.`
 }
 
 export const others = {
   title: 'Others',
-  desc: ''
+  desc: 'During my time @Evozon, besides the projects that I was working on, side-projects and being involved in different trainings, I also enjoyed holding trainings and small tech presentations to my colleagues.'
 }

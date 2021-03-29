@@ -1,37 +1,34 @@
-@media screen and (min-width: 360px) and (max-width: 412px) {
+@media screen and (min-width: 361px) and (max-width: 412px) {
   html {
-    height: 155%;
-  }
-  .row {
-    flex-direction: column;
-  }
-  aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    min-height: unset;
-  }
-  aside::after {
-    top: unset;
-    right: unset;
-    bottom: 0;
-    height: 1px;
-    animation: inc-h .25s .25s linear forwards;
+    height: unset;
   }
   section {
     padding: 1rem;
     width: calc(100% - 2rem);
   }
+  footer {
+    left: 25%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .cv .menu {margin-right: 1rem;}
+  .container {
+    margin-bottom: 2rem;
+  }
+  .nav {
+    align-items: flex-end;
+    justify-content: center;
+  }
   .t6 {
     width: 9rem!important;
   }
   .d1, .d2, .d3, .d4, .d5, .d6 {
-    max-width: 20rem;
+    max-width: 19rem;
     white-space: normal;
   }
-  .stack {
-    align-items: center;
+  .projects {
+    max-width: 18rem;
   }
   #techs::after {
     left: unset;
@@ -44,10 +41,6 @@
   }
   .tech-chev, #techs::after {
     width: 16rem;
-  }
-  
-  .js {
-    /* width: 40px; */
   }
   
   .css {
@@ -65,21 +58,29 @@
     padding: 1px 5px;
   }
   
-  .electron {
-    /* width: 40px; */
-  }
-  
   .jasmine {
     width: 60px;
   }
   
   .github {
-    background-color: #fff;
+    max-width: 40px;
+  }
+
+  .linkedin {
+    max-width: 45px;
   }
 }
 
 @media screen and (max-width: 360px) {
-   .d1, .d2, .d3, .d4, .d5, .d6 {
-    max-width: 18rem;
-   }
+  section {
+    padding: 1rem;
+    width: calc(100% - 2rem);
+  }
+  .cv .menu {margin-right: 1rem;}
+  .cv-image {
+    flex-direction: column;
+  }
+  .d1, .d2, .d3, .d4, .d5, .d6, .projects {
+    max-width: 17rem;
+  }
 }

@@ -1,25 +1,22 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import javasc from '../images/js.png';
 import ts from '../images/ts.webp';
-import html from '../images/html.png';
-import css from '../images/css.png';
 import redux from '../images/redux.svg';
-import vue from '../images/vue.png';
 import next from '../images/next.png';
 import nuxt from '../images/nuxt.png';
 import electron from '../images/electron.png';
 import webpack from '../images/webpack.png';
-import sass from '../images/sass.png';
+import less from '../images/less.png';
 import bulma from '../images/bulma.png';
-import node from '../images/node.svg';
-import python from '../images/python.png';
 import mysql from '../images/mysql.png';
 import cypress from '../images/cypress.webp';
 import jasmine from '../images/jasmine.svg';
 import jest from '../images/jest.png';
-import github from '../images/github.png';
-import linkedin from '../images/linkedin.png';
+import jquery from '../images/jquery.png';
+import backbone from '../images/backbone.png';
+import ko from '../images/ko-logo.png';
+import flutter from '../images/flutter.png';
 
 const urls = {
   react: 'https://reactjs.org',
@@ -31,13 +28,19 @@ const urls = {
   electron: 'https://electronjs.org',
   webpack: 'https://webpack.js.org',
   sass: 'https://sass-lang.com',
+  less: 'http://lesscss.org',
   bulma: 'https://bulma.io',
   node: 'https://nodejs.org',
   python: 'https://python.org',
+  java: 'https://java.com',
   mysql: 'https://mysql.com',
   cypress: 'https://cypress.io',
   jasmine: 'https://jasmine.github.io',
   jest: 'https://jestjs.io',
+  jquery: 'https://jquery.com',
+  backbone: 'https://backbonejs.org',
+  knockout: 'https://knockoutjs.com',
+  flutter: 'https://flutter.dev',
   github: 'https://github.com/radufarcas10',
   linkedin: 'https://linkedin.com/in/radu-farcas/'
 }
@@ -53,60 +56,44 @@ function Stack() {
       techs.classList.add('closed');
     }
   }
+  
   return (
     <div className="tech">
       <h5 className="title t6">I've worked with</h5>
       <div id="techs" className="stack closed">
         <ul>
           <li>
-            <img title="JavaScript" className="stack-img js" src={javasc} />
+            <FontAwesomeIcon icon={['fab', 'js']} className="stack-img" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon={['fab', 'html5']} className="stack-img" />
+          </li>
+          <li>
+            <FontAwesomeIcon icon={['fab', 'css3-alt']} className="stack-img" />
           </li>
           <li>
             <img title="TypeScript" className="stack-img js" src={ts} />
-          </li>
-          <li>
-            <img title="HTML" className="stack-img" src={html} />
-          </li>
-          <li>
-            <img title="CSS" className="stack-img css" src={css} />
           </li>
         </ul>
         <ul>
           <li>
             <a href={urls.react} target="_blank">
-              <img title="React" className="stack-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" />
+              <FontAwesomeIcon icon={['fab', 'react']} className="stack-img" />
             </a>
           </li>
           <li>
             <a href={urls.reactN} target="_blank">
-              <img title="React Native" className="stack-img native" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" />
+              <FontAwesomeIcon icon={['fab', 'react']} className="stack-img native" />
             </a>
           </li>
           <li>
             <a href={urls.vue} target="_blank">
-              <img title="Vue" className="stack-img vue" src={vue} />
+              <FontAwesomeIcon icon={['fab', 'vuejs']} className="stack-img" />
             </a>
           </li>
           <li>
             <a href={urls.redux} target="_blank">
               <img title="Redux" className="stack-img redux" src={redux} />
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href={urls.electron} target="_blank">
-              <img title="Electron" className="stack-img" src={electron} />
-            </a>
-          </li>
-          <li>
-            <a href={urls.next} target="_blank">
-              <img title="Next" className="stack-img css github next" src={next} />
-            </a>
-          </li>
-          <li>
-            <a href={urls.nuxt} target="_blank">
-              <img title="Nuxt" className="stack-img" src={nuxt} />
             </a>
           </li>
         </ul>
@@ -118,19 +105,41 @@ function Stack() {
           </li>
           <li>
             <a href={urls.sass} target="_blank">
-              <img title="SASS" className="stack-img" src={sass} />
+              <FontAwesomeIcon icon={['fab', 'sass']} className="stack-img" />
+            </a>
+          </li>
+          <li>
+            <a href={urls.less} target="_blank">
+              <img title="Less" className="stack-img electron" src={less} />
             </a>
           </li>
           <li>
             <a href={urls.bulma} target="_blank">
-              <img title="Bulma" className="stack-img jasmine github next" src={bulma} />
+              <img title="Bulma" className="stack-img jasmine w-bg next" src={bulma} />
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href={urls.jquery} target="_blank">
+              <img title="jQuery" className="stack-img w-bg" src={jquery} />
+            </a>
+          </li>
+          <li>
+            <a href={urls.backbone} target="_blank">
+              <img title="Backbone" className="stack-img w-bg backbone next" src={backbone} />
+            </a>
+          </li>
+          <li>
+            <a href={urls.knockout} target="_blank">
+              <img title="Knockout" className="stack-img jasmine next" src={ko} />
             </a>
           </li>
         </ul>
         <ul>
           <li>
             <a href={urls.cypress} target="_blank">
-              <img title="Cypress" className="stack-img jasmine github" src={cypress} />
+              <img title="Cypress" className="stack-img jasmine w-bg" src={cypress} />
             </a>
           </li>
           <li>
@@ -144,15 +153,46 @@ function Stack() {
             </a>
           </li>
         </ul>
+        <button className="tech-chev" onClick={handleClick}><span>&#x27EA;</span></button>
+      </div>
+      <h5 className="title t7">I played around with</h5>
+      <div className="stack">
+        <ul>
+          <li>
+            <a href={urls.electron} target="_blank">
+              <img title="Electron" className="stack-img" src={electron} />
+            </a>
+          </li>
+          <li>
+            <a href={urls.next} target="_blank">
+              <img title="Next" className="stack-img css w-bg next" src={next} />
+            </a>
+          </li>
+          <li>
+            <a href={urls.nuxt} target="_blank">
+              <img title="Nuxt" className="stack-img" src={nuxt} />
+            </a>
+          </li>
+          <li>
+            <a href={urls.flutter} target="_blank">
+              <img title="Flutter" className="stack-img flutter" src={flutter} />
+            </a>
+          </li>
+        </ul>
         <ul>
           <li>
             <a href={urls.node}>
-              <img title="NodeJS" className="stack-img css" src={node} />
+              <FontAwesomeIcon icon={['fab', 'node']} className="stack-img" />
             </a>
           </li>
           <li>
             <a href={urls.python}>
-              <img title="Python" className="stack-img" src={python} />
+              <FontAwesomeIcon icon={['fab', 'python']} className="stack-img" />
+            </a>
+          </li>
+          <li>
+            <a href={urls.java}>
+              <FontAwesomeIcon icon={['fab', 'java']} className="stack-img" />
             </a>
           </li>
           <li>
@@ -161,19 +201,18 @@ function Stack() {
             </a>
           </li>
         </ul>
-        <button className="tech-chev" onClick={handleClick}><span>&#x27EA;</span></button>
       </div>
       <h5 className="title t6">Where to find me</h5>
       <div className="stack">
         <ul>
           <li>
             <a href={urls.github}>
-              <img title="GitHub" className="stack-img github" src={github} />
+              <FontAwesomeIcon icon={['fab', 'github']} className="stack-img" />
             </a>
           </li>
           <li>
             <a href={urls.linkedin}>
-              <img title="LinkedIn" className="stack-img" src={linkedin} />
+              <FontAwesomeIcon icon={['fab', 'linkedin']} className="stack-img" />
             </a>
           </li>
         </ul>

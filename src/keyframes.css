@@ -20,39 +20,55 @@
 }
 @keyframes at6 {
   from{width: 0;}
-  to{width: 6rem;}
+  to{width: 7rem;}
+}
+@keyframes at7 {
+  from{width: 0;}
+  to{width: 9rem;}
 }
 @keyframes dt1 {
   from{width: 0;}
-  to{width: 23rem;}
+  to{width: 50rem;}
 }
 @keyframes dt2 {
   from{width: 0;}
-  to{width: 19rem;}
+  to{width: 50rem;}
+}
+@keyframes proj {
+  from{width: 0;}
+  to{width: 50rem;}
 }
 @keyframes dt3 {
   from{width: 0;}
-  to{width: 34rem;}
+  to{width: 50rem;}
 }
 @keyframes dt4 {
   from{width: 0;}
-  to{width: 21rem;}
+  to{width: 50rem;}
 }
 @keyframes dt5 {
   from{width: 0;}
-  to{width: 21rem;}
+  to{width: 50rem;}
 }
 @keyframes dt6 {
   from{width: 0;}
-  to{width: 21rem;}
+  to{width: 50rem;}
 }
 @keyframes stack {
   from{width: 0}
   to{width: 17rem}
 }
+@keyframes fade {
+  0%, 100% {opacity: 0}
+  50% {opacity: 1;}
+}
 @keyframes fadeIn {
   from{opacity:0;}
   to{opacity:1;}
+}
+@keyframes fadeOut {
+  from{opacity:1;}
+  to{opacity:0;}
 }
 @keyframes fadeAndSlide {
   0% {
@@ -107,5 +123,25 @@
   }
   60% {
     transform: translateY(-2px) rotate(270deg);
+  }
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleOut {
+  0% {
+    transform: translate(-50%, -50%) scale(1,1);
+  }
+  33% { opacity: .1;}
+  100% {
+    transform: translate(-50%, -50%) scale(4, 4);
+    opacity: 0;
   }
 }

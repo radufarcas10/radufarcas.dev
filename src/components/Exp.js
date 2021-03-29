@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from './Item';
+import Item from 'components/Item';
 
 function Experience(props) {
   const data = props.data;
@@ -13,6 +13,14 @@ function Experience(props) {
         <span>{data.desc.job}</span>
         <a target="_blank" href={data.desc.url}>{data.desc.company}</a>
       </p>
+      <div className="projects">
+        <p>Projects I've worked on @Evozon:</p>
+        <ul>
+          {
+            data.desc.projects.map((proj, index) => <li key={index}><span>{proj}</span></li>)
+          }
+        </ul>
+      </div>
     </div>
   );
 }

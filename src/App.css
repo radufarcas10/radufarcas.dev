@@ -4,6 +4,29 @@
   background: linear-gradient(225deg, var(--main-bg-color) 0%, #292929 65%, #404040 100%);
 }
 
+.intro {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  animation: fadeOut .3s 1.1s linear forwards;
+}
+
+.logo {
+  background: url('./images/logo.png') no-repeat center center;
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(.5);
+  animation: scaleIn .6s 0s linear forwards, scaleOut .4s steps(30,end) .8s 1 normal both;
+}
+
 .grad {
   position: fixed;
   top: 0;
@@ -31,11 +54,10 @@
   color: white;
   opacity: 0;
   z-index: 2;
-  animation: fadeIn 1s 0s linear forwards;
+  animation: fadeIn .5s .3s linear forwards;
 }
 
 .about {
-  position: relative;
   display: flex;
   text-align: center;
   height: 100%;
@@ -43,6 +65,12 @@
   max-width: 900px;
   margin: 0 auto;
   flex-direction: column;
+}
+
+.container {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .row {
@@ -54,27 +82,44 @@
 .column {
   display: flex;
   flex-direction: column;
+}
+
+.nav {
+  height: 4rem;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0;
+  animation: fadeIn .3s .2s linear forwards;
+}
+
+.menu {
+  font-weight: bold;
+  transition: all .2s;
+}
+
+.menu-arrow {
+  transition: all .2s;
+  padding-right: 0;
+}
+
+.menu:hover {
+  color: var(--text-color)!important;
+  transition: all .2s;
+  transform: scale(1.2);
+}
+
+.menu:hover .menu-arrow {
+  transition: all .2s;
+  margin-right: 5px;
+  color: var(--text-color);
+}
+.cv {
   align-items: flex-start;
-}
-
-aside {
-  position: relative;
-}
-
-aside::after {
-  content: '';
-  background-color: var(--border-color);
-  width: 1px;
-  position: absolute;
-  top: 0;
-  right: 2rem;
-  animation: inc .25s .25s linear forwards;
 }
 
 .image {
   width: 160px;
   height: 160px;
-  cursor: pointer;
   border-radius: 50%;
   margin-bottom: 2rem;
   background-image: url('./me.jpg');
@@ -123,7 +168,7 @@ aside::after {
 
 .tech {
   text-align: left;
-  font-size: .7rem;
+  font-size: .875rem;
 }
 
 .tech .desc {
@@ -136,6 +181,7 @@ aside::after {
   flex-wrap: nowrap;
   flex-direction: column;
   overflow: hidden;
+  margin-left: 1rem;
 }
 
 .stack li {
@@ -151,11 +197,12 @@ aside::after {
 
 .stack-img {
   width: 30px;
-  margin: 0 5px;
-  transition: transform .2s;
+  transition: all .2s;
 }
 
 .stack-img:hover {
+  color: var(--link-color);
+  border-color: var(--link-color);
   transform: scale(1.2);
 }
 
@@ -183,6 +230,14 @@ aside::after {
   height: 100%;
   transition: all .3s ease-in-out;
   padding-bottom: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+.unset {
+  height: unset!important;
 }
 
 #techs.open::after{
@@ -221,6 +276,15 @@ aside::after {
   transition: all .2s;
 }
 
+.stack ul li {
+  margin: 0 5px;
+}
+
+.stack ul li svg {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
 .js {
   width: 40px;
 }
@@ -233,11 +297,11 @@ aside::after {
   width: 18px;
   border: 1px solid #fff;
   border-radius: 3px;
-  padding: 14px 5px;
+  padding: 11px 3px;
 }
 
 .next {
-  padding: 1px 5px;
+  padding: 0 3px;
 }
 
 .electron {
@@ -248,13 +312,37 @@ aside::after {
   width: 60px;
 }
 
-.github {
+.backbone {
+  width: 70px;
+}
+
+.github:hover {
+  background-color: var(--link-color);
+}
+
+.flutter {
+  width: 20px;
+}
+
+.w-bg {
   background-color: #fff;
+}
+
+.cv-image {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn .3s .2s linear forwards;
+}
+
+.job {
+  margin: 1rem 2rem;
 }
 
 .title {
   border-bottom: 1px solid var(--border-color);
   padding: 10px 10px 10px 0;
+  margin: .5rem;
   white-space: nowrap;
   overflow: hidden;
   text-align: left;
@@ -264,12 +352,31 @@ aside::after {
 
 .desc {
   padding: 0 1rem;
+  margin: .5rem;
   font-size: .7rem;
   font-weight: 100;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   opacity: 0;
   text-align: left;
+}
+
+.projects {
+  text-align: left;
+  color: var(--text-color);
+  font-size: .7rem;
+  margin-left: 1.7rem;
+  opacity: 0;
+  animation: fadeIn .3s .3s linear forwards, proj .3s steps(30,end) .3s 1 normal both;
+}
+
+.projects ul {
+  margin-left: 1.5rem;
+  list-style-type: circle;
+}
+
+.projects li {
+  width: 100%;
 }
 
 .t1 {
@@ -289,6 +396,9 @@ aside::after {
 }
 .t6 {
   animation: fadeIn .3s 0s linear forwards, at6 .3s steps(30,end) .1s 1 normal both;
+}
+.t7 {
+  animation: fadeIn .3s 0s linear forwards, at7 .3s steps(30,end) .1s 1 normal both;
 }
 
 .d1 {

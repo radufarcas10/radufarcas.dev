@@ -1,5 +1,5 @@
 import React from 'react';
-import Item from './Item';
+import Item from 'components/Item';
 
 function About(props) {
   const data = props.data;
