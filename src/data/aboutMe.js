@@ -1,6 +1,7 @@
 export const about = {
     title: 'About me',
-    desc: 'I am a Front-end developer based in Cluj-Napoca, Romania, and let\'s say that I love JavaScript, always exploring and playing with the newest technologies.'
+    desc: `I am a Front-end developer, living in Cluj-Napoca, Romania, open minded and let\'s say that I like to translate designs into fast, performant, pixel perfect apps, always exploring and playing with the newest technologies.
+    I love JavaScript.`
 }
 
 export const experience = {
@@ -42,8 +43,8 @@ export const education = {
 
 export const hobbies = {
   title: 'Hobbies',
-  desc: `Besides the love for JS, I love photography, football and sports in general. \n
-  I also like gadgets, playing around with the newest tech, IoT, games and many more. \n
+  desc: `Besides JS, I love football and sports in general, photography.
+  I also like gadgets, playing around with the newest tech, IoT, AR, VR, games and many more.
   Sometimes I like to try designing all kinds of things.`
 }
 

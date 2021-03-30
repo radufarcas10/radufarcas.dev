@@ -20,12 +20,12 @@
     align-items: flex-end;
     justify-content: center;
   }
+  .desc {padding: 0 .5rem;}
   .t6 {
     width: 9rem!important;
   }
   .d1, .d2, .d3, .d4, .d5, .d6 {
     max-width: 19rem;
-    white-space: normal;
   }
   .projects {
     max-width: 18rem;
@@ -73,9 +73,10 @@
 
 @media screen and (max-width: 360px) {
   section {
-    padding: 1rem;
-    width: calc(100% - 2rem);
+    padding: .5rem;
+    width: calc(100% - 1rem);
   }
+  .desc {padding: 0 .5rem;}
   .cv .menu {margin-right: 1rem;}
   .cv-image {
     flex-direction: column;

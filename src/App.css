@@ -213,9 +213,9 @@
 #techs::after {
   position: absolute;
   content: '';
-  height: 40px;
-  background: linear-gradient(to top,  var(--main-bg-color) 20%, transparent 100%);
-  bottom: 19px;
+  height: 60px;
+  background: linear-gradient(to top,  var(--main-bg-color) 50%, transparent 100%);
+  bottom: 0;
   left: 0;
   width: 13rem;
   opacity: 1;
@@ -249,12 +249,13 @@
   cursor: pointer;
   position: absolute;
   bottom: -11px;
-  width: 13rem;
+  width: 15rem;
   color: #fff;
-  background: var(--main-bg-color);
+  background: transparent;
   border: none;
   margin: 6px 0;
   opacity: 0;
+  z-index: 3;
   animation: fadeIn .3s .2s linear forwards;
 }
 
@@ -340,6 +341,7 @@
 }
 
 .title {
+  font-size: .875rem;
   border-bottom: 1px solid var(--border-color);
   padding: 10px 10px 10px 0;
   margin: .5rem;
@@ -353,9 +355,9 @@
 .desc {
   padding: 0 1rem;
   margin: .5rem;
-  font-size: .7rem;
+  font-size: .75rem;
   font-weight: 100;
-  white-space: normal;
+  white-space: pre-line;
   overflow: hidden;
   opacity: 0;
   text-align: left;
@@ -364,7 +366,7 @@
 .projects {
   text-align: left;
   color: var(--text-color);
-  font-size: .7rem;
+  font-size: .75rem;
   margin-left: 1.7rem;
   opacity: 0;
   animation: fadeIn .3s .3s linear forwards, proj .3s steps(30,end) .3s 1 normal both;
