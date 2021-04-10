@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Section from 'components/Section';
-import { checkTitle, isOnCv } from 'utils/route';
+import { checkTitle, isOnCv, goBack } from 'utils/route';
 
 function CV() {
   checkTitle();
@@ -9,7 +8,7 @@ function CV() {
   return (
     <main className="container column cv">
       <nav className="row nav">
-        <Link to="/" className="menu"><span className="menu-arrow">&#8249;</span>&nbsp;go back</Link>
+        <button onClick={goBack} className="menu"><span className="menu-arrow">&#8249;</span>&nbsp;go back</button>
       </nav>
       <div className="row cv-image">
         <div className="image">

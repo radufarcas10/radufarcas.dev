@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
@@ -17,7 +17,7 @@ library.add(fab);
 
 function App() {
   return (
-    <Router>
+    <Router hashType={'noslash'}>
       <div className="wrapper">
         <div className="grad">
           <div className="grad-in"></div>

@@ -93,8 +93,19 @@
 }
 
 .menu {
+  font-family: JetbrainsMono;
   font-weight: bold;
+  font-size: .8rem;
   transition: all .2s;
+  background: none;
+  border: none;
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+.menu:focus {
+  border: none;
+  outline: none;
 }
 
 .menu-arrow {
